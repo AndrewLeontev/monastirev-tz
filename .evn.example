@@ -1,0 +1,2 @@
+export SUBORDINATION_STRUCTURE_LOGIN=db_login
+export SUBORDINATION_STRUCTURE_PASSWORD=db_passwordrails 
