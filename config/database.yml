@@ -49,6 +49,7 @@ test:
 #
 production:
   <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
   database: subordination_structure_production
   username: subordination_structure
   password: <%= ENV['SUBORDINATION_STRUCTURE_PASSWORD'] %>
