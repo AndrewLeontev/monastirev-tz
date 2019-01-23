@@ -1,0 +1,11 @@
+USE subordination_structure_development;
+INSERT INTO `employees` (`name`, `created_at`, `updated_at`) VALUES ('Иванов А.А.', NOW(), NOW());
+INSERT INTO `employees` (`name`, `created_at`, `updated_at`, `ancestry`) VALUES ('Петров И.Н.', NOW(), NOW(), '1');
+INSERT INTO `employees` (`name`, `created_at`, `updated_at`, `ancestry`) VALUES ('Сидоров М.С.', NOW(), NOW(), '1/2');
+INSERT INTO `employees` (`name`, `created_at`, `updated_at`, `ancestry`) VALUES ('Михайлов Н.К.', NOW(), NOW(), '1/2/3');
+INSERT INTO `employees` (`name`, `created_at`, `updated_at`) VALUES ('Иванов А.А.', NOW(), NOW());
+INSERT INTO `employees` (`name`, `created_at`, `updated_at`, `ancestry`) VALUES ('Петров И.Н.', NOW(), NOW(), '5');
+INSERT INTO `employees` (`name`, `created_at`, `updated_at`, `ancestry`) VALUES ('Сидоров М.С.', NOW(), NOW(), '5/6');
+INSERT INTO `employees` (`name`, `created_at`, `updated_at`, `ancestry`) VALUES ('Михайлов Н.К.', NOW(), NOW(), '5/6/7');
+INSERT INTO `employees` (`name`, `created_at`, `updated_at`) VALUES ('Крамов А.В.', NOW(), NOW());
+INSERT INTO `employees` (`name`, `created_at`, `updated_at`) VALUES ('Маров В.А.', NOW(), NOW());

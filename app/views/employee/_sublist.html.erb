@@ -1,0 +1,9 @@
+<% @employees.each do |employee| %>
+        <li><%= employee.name %>
+            <% if (employee.children.count > 0)%>
+                <ul>
+                    <%= employee.render_children(employee) %>
+                </ul>
+            <% end %>
+        </li>
+<% end %>

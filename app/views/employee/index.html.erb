@@ -1,34 +1,20 @@
-<h1>Дерево подчиненности сотрудников</h1>
+<div class="container">
+    <h1>Дерево подчиненности сотрудников</h1>
 
- <select>
-   <option>---</option>
-   <option>Name 1</option>
- </select>
+    <div class="col-md-4">
+        <div class="input-group">
+        <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+            <option value="0" selected>Choose...</option>
+        </select>
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary" type="button">Button</button>
+        </div>
+        </div>
+    </div>
 
-<ul class="ul-tree ul-drop">
-    <li>Древовидный список;
-        <ul>
-            <li>У каждого элемента списка есть родитель, кроме элементов первого уровня;</li>
-            <li>Каждый следующий уровень вложенности смещается внутрь на фиксированное расстояние; </li>
-            <li>Наличие соединяющих линий;
-                <ul>
-                    <li>Все элементы &bdquo;братья&ldquo; должны соединяться линией;</li>
-                    <li>Все элементы &bdquo;дети&ldquo; должны соединяться линией с родителем;</li>
-                </ul>
-            </li>
-            <li>Элементы древовидного списка не должны иметь фоновую заливку для возможности отображения списка над любым градиентным фоном;</li>
+    <div class="col-md-8">
+        <ul class="ul-tree ul-drop">
+            <%= render 'sublist', employees: @employees %>
         </ul>
-    </li>
-    
-    <li>Раскрывающийся древовидный список;
-        <ul>
-            <li>Все то же что и у простого древовидного списка;</li>
-            <li>Наличие управляющих кнопок &bdquo;плюсиков&ldquo;;
-                <ul>
-                    <li>Каждый элемент являющийся родителем слева от себя должен иметь управляющую кнопку &bdquo;плюсик&ldquo;;</li>
-                    <li>При нажатии на эту кнопку дочерние элементы показываются, а кнопка приобретает вид минуса, при повторном нажатии дочернии элементы скрываются, кнопка приобретает свой первоначальный вид.</li>
-                </ul>
-            </li>
-        </ul>
-    </li>
-</ul>
+    </div>
+</div>
