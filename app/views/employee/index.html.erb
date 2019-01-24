@@ -17,6 +17,7 @@
             <%= render 'sublist', employees: @employees %>   
             <% @employees.each do |emp| %>
                 <li><%= emp.name %>
+                    <%= emp.children[0].name %>
                     <% if (emp.children.count > 0)%>
                         <ul>
                             <%= emp.render_children(emp) %>
