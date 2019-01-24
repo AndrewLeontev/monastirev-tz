@@ -1,7 +1,7 @@
 <div class="container">
     <h1>Дерево подчиненности сотрудников</h1>
 
-    <div class="col-md-6">
+    <div class="col-md-4">
         <%= form_tag({controller: "employee", action: "show"}, method: "get") do %>
             <div class="input-group">
                 <%= select_tag(:employee_id, options_for_select(Employee.all.map{ |emp| [emp.name, emp.id] }), include_blank: "All", class: "custom-select") %>
@@ -12,13 +12,10 @@
         <% end %>
     </div>
 
-    <div class="col-md-6">
-        <ul class="ul-tree ul-drop" id="tree">
-            <%= render 'sublist', employees: @employees %>
+    <div class="col-md-8">
+        <ul class="ul-tree ul-drop">
+            <%= render 'sublist', employees: Employee.top_level %>
         </ul>
     </div>
-    <div class="info">
-        <span class="a-action lasttreedrophide">скрыть всё</span>,
-        <span class="a-action lasttreedropshow">раскрыть всё</span>
-    </div>
+
 </div>
