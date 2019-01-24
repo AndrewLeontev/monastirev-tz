@@ -13,9 +13,9 @@
     </div>
 
     <div class="col-md-8">
-        <ul class="ul-tree" id="tree">
+        <ul class="ul-tree class="ul-drop" id="tree">
             <li><%= @user.name %>
-                <ul  class="ul-drop">
+                <ul>
                     <%= @user.render_children(@user) %>
                 </ul>
             </li>
