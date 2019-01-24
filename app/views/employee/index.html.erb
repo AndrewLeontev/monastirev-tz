@@ -6,7 +6,7 @@
             <div class="input-group">
                 <%= select_tag(:employee_id, options_for_select(Employee.all.map{ |emp| [emp.name, emp.id] }), include_blank: "All", class: "custom-select") %>
                 <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="submit">Button</button>
+                    <button class="btn btn-outline-secondary" type="submit">Построить</button>
                 </div>
             </div>
         <% end %>
