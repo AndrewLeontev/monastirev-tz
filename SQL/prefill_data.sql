@@ -10,7 +10,7 @@ INSERT INTO `employees` (`name`, `created_at`, `updated_at`, `ancestry`) VALUES 
 INSERT INTO `employees` (`name`, `created_at`, `updated_at`) VALUES ('Крамов А.В.', NOW(), NOW());
 INSERT INTO `employees` (`name`, `created_at`, `updated_at`, `ancestry`) VALUES ('Маров В.А.', NOW(), NOW(), '9');
 INSERT INTO `employees` (`name`, `created_at`, `updated_at`, `ancestry`) VALUES ('Петлюра В.С.', NOW(), NOW(), '9');
-INSERT INTO `employees` (`name`, `created_at`, `updated_at`, `ancestry`) VALUES ('Смирнов А.Е.', NOW(), NOW(), '10');
+INSERT INTO `employees` (`name`, `created_at`, `updated_at`, `ancestry`) VALUES ('Смирнов А.Е.', NOW(), NOW(), '9/10');
 INSERT INTO `employees` (`name`, `created_at`, `updated_at`) VALUES ('Птичкин Н.М.', NOW(), NOW());
 INSERT INTO `employees` (`name`, `created_at`, `updated_at`, `ancestry`) VALUES ('Смешной Е.В.', NOW(), NOW(),'13');
-INSERT INTO `employees` (`name`, `created_at`, `updated_at`, `ancestry`) VALUES ('Поддубный Н.И.', NOW(), NOW(), '14');
+INSERT INTO `employees` (`name`, `created_at`, `updated_at`, `ancestry`) VALUES ('Поддубный Н.И.', NOW(), NOW(), '13/14');
