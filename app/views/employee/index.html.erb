@@ -14,7 +14,16 @@
 
     <div class="col-md-8">
         <ul class="ul-tree ul-drop">
-            <%= render 'sublist', employees: @employees %>
+            <%= render 'sublist', employees: @employees %>   
+            <% @employees.each do |emp| %>
+                <li><%= emp.name %>
+                    <% if (emp.children.count > 0)%>
+                        <ul>
+                            <%= emp.render_children(emp) %>
+                        </ul>
+                    <% end %>
+                </li>
+            <% end %>
         </ul>
     </div>
     <ul class="ul-tree ul-drop">
