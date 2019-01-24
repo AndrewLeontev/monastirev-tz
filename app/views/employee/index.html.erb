@@ -6,7 +6,7 @@
             <div class="input-group">
                 <%= select_tag(:employee_id, options_for_select(Employee.all.map{ |emp| [emp.name, emp.id] }), include_blank: "All", class: "custom-select") %>
                 <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="submit">Отобразить</button>
+                    <button class="btn btn-outline-secondary" type="submit">Button</button>
                 </div>
             </div>
         <% end %>
@@ -14,8 +14,7 @@
 
     <div class="col-md-8">
         <ul class="ul-tree ul-drop">
-            <%= render 'sublist', employees: Employee.top_level %>
+            <%= render 'sublist', employees: @employees %>
         </ul>
     </div>
-
 </div>

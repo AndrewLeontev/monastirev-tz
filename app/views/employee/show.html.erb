@@ -1,12 +1,12 @@
 <div class="container">
     <h1>Дерево подчиненности сотрудников</h1>
 
-    <div class="col-md-6">
+    <div class="col-md-4">
         <%= form_tag({controller: "employee", action: "show"}, method: "get") do %>
             <div class="input-group">
                 <%= select_tag(:employee_id, options_for_select(Employee.all.map{ |emp| [emp.name, emp.id] }, @user.id), include_blank: "All", class: "custom-select") %>
                 <div class="input-group-append">
-                    <button class="btn btn-outline-secondary" type="submit">Отобразить</button>
+                    <button class="btn btn-outline-secondary" type="submit">Button</button>
                 </div>
             </div>
         <% end %>
